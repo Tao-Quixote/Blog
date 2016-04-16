@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aaf13240-a3cd-4712-bdd9-6c4076ff6909" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2016-04-16-test-for-gh-pages.html" afterPath="$PROJECT_DIR$/_posts/2016-04-16-test-for-gh-pages.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="Blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/_posts/2016-04-16-test-for-gh-pages.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.19843341">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -235,7 +234,7 @@
     <entry file="file://$PROJECT_DIR$/_posts/2016-04-16-test-for-gh-pages.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19843341">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           <folding />
         </state>
       </provider>
