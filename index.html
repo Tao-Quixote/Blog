@@ -4,7 +4,14 @@ title: My Blog's HomePage
 ---
 
 <h2> {{page.title}} </h2>
-<p>last page</p>
+<div class='category'>
+    <ul>
+        {% for cat in site.categories %}
+        <li><a href="{{ site.BASE_PATH }}/category.html#{{ cat[0] }}">{{ cat[0] }}<span>{{ cat[1].size }}</span></a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 <ul>
     　　　　{% for post in site.posts %}
     　　　　　　

@@ -1,5 +1,6 @@
 encoding: utf-8
-baseurl:
+baseurl:  #不用设置
+categories: test,many
 #paginate: 5 # 指定每页多少条
 #paginate_path: "page:num" # 指定每页的url
 #markdown: macdown #默认使用macdown
