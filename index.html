@@ -13,7 +13,7 @@ title: My Blog's HomePage
     <ul>
         {% for post in site.posts %}
         <li>
-            <h2><a href="{{site.BASE_PATH}}{{post.url}}">{{post.title}}</a></h2>
+            <h2><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h2>
             <p>{{post.content}}</p>
         </li>
         {% endfor %}
