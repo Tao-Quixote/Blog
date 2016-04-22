@@ -5,8 +5,19 @@ title: My Blog's HomePage
 <div class='category'>
     <ul>
         {% for cat in site.categories %}
-        <li><a href="{{ site.BASE_PATH }}/category.html#{{ cat[0] }}">{{ cat[0] }}<span>数量{{ cat[1].size }}</span></a>
+        <li>
+            <a href="{{ site.BASE_PATH }}/category.html#{{ cat[0] }}">{{ cat[0] }}<span>数量{{ cat[1].size }}</span></a>
         </li>
         {% endfor %}
     </ul>
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <h2><a href="{{site.BASE_PATH}}{{post.url}}">{{post.title}}</a></h2>
+            <p>{{post.content}}</p>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <p>post time: {{ site.time | date_to_long_string }}</p>
 </div>
