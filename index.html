@@ -14,7 +14,7 @@ title: My Blog's HomePage
         {% for post in site.posts %}
         <li>
             <h2><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h2>
-            <p>{{post.content}}</p>
+            <p>{{post.excerpt}}</p>
         </li>
         {% endfor %}
     </ul>

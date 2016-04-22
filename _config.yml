@@ -4,4 +4,4 @@ baseurl:
 categories: javascript,css,html,mac,linux
 #paginate: 5 # 指定每页多少条
 #paginate_path: "page:num" # 指定每页的url
-#markdown: macdown #默认使用macdown
+markdown: kramdown #默认使用macdown
