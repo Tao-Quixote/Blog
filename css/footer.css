@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'iconmoon';
+    src: url('./fonts/icoMoon.ttf');
+    src: url('./fonts/icoMoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+footer.page-footer {
+    color: #fff;
+    text-align: center;
+    background-color: rgb(24, 231, 200);
+    padding: 20px;
+}
+
+.page-footer * {
+    margin: 0;
+    padding: 0;
+}
+
+.page-footer > h1 {
+    display: none;
+}
+
+.page-footer address {
+    font-style: normal;
+}
+
+.page-footer address a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.page-footer address span {
+    font-family: 'iconmoon' !important;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.page-footer address span:hover {
+    color: #ee82ee;
+    -webkit-transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear;
+    -ms-transition: color 0.3s linear;
+    -o-transition: color 0.3s linear;
+    transition: color 0.3s linear;
+}
+
+.page-footer .facebook::before {
+    content: "\ea91";
+}
+
+.page-footer .twitter::before {
+    content: "\ea96";
+}
+
+.page-footer .github::before {
+    content: "\eab0";
+}
+
+.page-footer .google::before {
+    content: "\ea8c";
+}
+
+.page-footer .copy-right {
+    margin-top: 15px;
+}
