@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'iconmoon';
+    src: url('./fonts/icoMoon.ttf');
+    src: url('./fonts/icoMoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.content {
+    max-width: 1000px;
+    min-height: 100%;
+    margin: -130px auto -96px;
+    padding: 130px 0 96px;
+}

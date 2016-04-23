@@ -1,11 +1,3 @@
-@font-face {
-    font-family: 'iconmoon';
-    src: url('./fonts/icoMoon.ttf');
-    src: url('./fonts/icoMoon.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 footer.page-footer {
     color: #fff;
     text-align: center;
@@ -64,6 +56,20 @@ footer.page-footer {
     content: "\ea8c";
 }
 
+.page-footer .ws::before {
+    content: "\e949";
+}
+
+.page-footer .mail {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.page-footer .mail > a {
+    text-decoration: underline;
+}
+
 .page-footer .copy-right {
     margin-top: 15px;
+    font-size: 20px;
 }
