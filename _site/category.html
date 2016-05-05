@@ -8,14 +8,17 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="description" content="">
-    <!--[if lt IE 9]>
     <meta name="keywords" content="javascript,css,html,mac,linux">
+    <!--[if lt IE 9]>
+    <script rel="script" type="text/javascript" src="/Blog/_site/js/html5.js"></script>
     <![endif]-->
     <link href="/Blog/_site/css/footer.css" rel="stylesheet" type="text/css">
     <link href="/Blog/_site/favicon.ico" rel="shortcut icon">
     <link href="/Blog/_site/css/reset.css" rel="stylesheet" type="text/css">
     <link href="/Blog/_site/css/common.css" rel="stylesheet" type="text/css">
     <link href="/Blog/_site/css/header.css" rel="stylesheet" type="text/css">
+    <link href="/Blog/_site/css/category.css" rel="stylesheet" type="text/css">
+    <script rel="script" type="text/javascript" src="/Blog/_site/js/zepto.js"></script>
 </head>
 
 <body>
@@ -38,7 +41,45 @@
 
 <div class="content">
     <h1 style="display: none;">Blog's content.</h1>
-    <h2>This is category page.</h2>
+    <div class="category-content">
+    <ul>
+        
+        <li>
+            <h2 class="category" href="javascript: void(0);">gh-pages</h2>
+            <ul>
+                
+                <li>
+                    <h3>
+                        <a href="/Blog/_site/gh-pages/2016/04/16/test-for-gh-pages.html">Test for gh-pages</a>
+                    </h3>
+                </li>
+                
+            </ul>
+        </li>
+        
+        <li>
+            <h2 class="category" href="javascript: void(0);">test</h2>
+            <ul>
+                
+                <li>
+                    <h3>
+                        <a href="/Blog/_site/test/2016/05/05/test-for-category.html">test for category</a>
+                    </h3>
+                </li>
+                
+            </ul>
+        </li>
+        
+    </ul>
+</div>
+<script>
+    $(function () {
+        var category = $('.category');
+        category.on('click', function () {
+            $(this).siblings('ul');
+        });
+    });
+</script>
 
 </div>
 <footer class="page-footer">

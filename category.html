@@ -2,5 +2,29 @@
 layout: default
 title: category
 ---
-
-<h2>This is category page.</h2>
+<div class="category-content">
+    <ul>
+        {% for cat in site.categories %}
+        <li>
+            <h2 class="category" href="javascript: void(0);">{{cat[0]}}</h2>
+            <ul>
+                {% for page in cat[1] %}
+                <li>
+                    <h3>
+                        <a href="{{ site.baseurl }}{{page.url}}">{{ page.title }}</a>
+                    </h3>
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+<script>
+    $(function () {
+        var category = $('.category');
+        category.on('click', function () {
+            $(this).siblings('ul');
+        });
+    });
+</script>

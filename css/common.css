@@ -7,8 +7,11 @@
 }
 
 .content {
-    max-width: 1000px;
     min-height: 100%;
     margin: -132px auto -140px;
     padding: 132px 0 140px;
+}
+
+.hidden {
+    display: none;
 }
