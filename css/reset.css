@@ -9,6 +9,7 @@
 html, body {
     font-family: Helvetica, Verdana, "Microsoft Yahei", "微软雅黑", Arial, sans-serif !important;
     font-size: 10px;
+    width: 100%;
 }
 
 body {

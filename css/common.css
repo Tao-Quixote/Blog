@@ -26,7 +26,6 @@
 
 /* content样式 */
 .main .main-inner {
-    width: 960px;
     margin: 0 auto;
 }
 
@@ -183,4 +182,35 @@ footer a:hover {
 
 footer address {
     margin-top: 10px;
+}
+
+/* 适配屏幕宽度 */
+@media screen and (min-width: 921px) {
+    .main .content {
+        width: 700px;
+    }
+
+    .main aside {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .main .content {
+        width: 100%;
+    }
+
+    .main aside {
+        display: none;
+    }
+
+    footer {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main .content {
+        padding: 0;
+    }
 }
