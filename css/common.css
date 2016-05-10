@@ -30,11 +30,42 @@
 }
 
 .main .content {
+    position: relative;
     width: 700px;
     background-color: white;
     padding: 10px 40px 40px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+@keyframes music {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+#music {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: iconmoon;
+    font-size: 2rem;
+    animation: music 3s infinite linear;
+    border-radius: 50%;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+#music::after {
+    content: '\e911';
 }
 
 /* aside样式 */
