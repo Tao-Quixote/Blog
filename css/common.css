@@ -6,12 +6,180 @@
     font-style: normal;
 }
 
-.content {
-    min-height: 100%;
-    margin: -132px auto -140px;
-    padding: 132px 0 140px;
+/* main样式 */
+.main {
+    border-top: 2px solid black;
+}
+
+.main::before, .main::after {
+    content: '';
+    display: table;
+}
+
+.main::after {
+    clear: both;
+}
+
+.main .content, .main aside {
+    float: left;
+}
+
+/* content样式 */
+.main .main-inner {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.main .content {
+    width: 700px;
+    background-color: white;
+    padding: 10px 40px 40px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* aside样式 */
+.main aside {
+    width: 200px;
+    background-color: #f5f7f9;
+    margin-left: 20px;
+}
+
+aside .desc {
+    color: #fff;
+    background-color: black;
+    text-align: center;
+    padding: 20px 5px;
+}
+
+aside .desc h3 {
+    font-size: 1.6rem;
+}
+
+aside .desc p {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+aside > nav {
+    background-color: white;
+}
+
+aside ul {
+    padding: 20px 0;
+    font-family: iconmoon;
+}
+
+aside ul > li {
+    line-height: 2.2;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+aside ul > li:hover {
+    background-color: #f5f7f9;
+}
+
+aside li > a::before {
+    padding-right: 10px;
+}
+
+.l-home::before {
+    content: '\e900';
+}
+
+.l-category::before {
+    content: '\ea66';
+}
+
+.l-about::before {
+    content: '\e976';
+}
+
+.l-concat::before {
+    content: '\e96d';
+}
+
+aside .something {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.something img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.something .rss {
+    color: orangered;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 5px 0;
+    border: dashed #e1e1e1;
+    border-width: 1px 0;
+}
+
+.rss p::before {
+    font-family: iconmoon;
+    content: '\ea9b';
+    padding-right: 10px;
+}
+
+.concat address {
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.concat address > a {
+    font-family: iconmoon;
+}
+
+.concat address > a:hover {
+    color: mediumpurple;
+}
+
+.concat .facebook::before {
+    content: '\ea91';
+}
+
+.concat .twitter::before {
+    content: '\ea96';
+}
+
+.concat .google::before {
+    content: '\ea89';
+}
+
+.concat .github::before {
+    content: '\eab0';
+}
+
+.concat .ws::before {
+    content: '\e949';
 }
 
 .hidden {
     display: none;
+}
+
+/* Footer style */
+footer {
+    text-align: center;
+    margin: 40px 220px 20px 0;
+    color: #666;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #333;
+}
+
+.copy-right {
+    margin-top: 20px;
 }

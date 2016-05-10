@@ -12,40 +12,26 @@
     <!--[if lt IE 9]>
     <script rel="script" type="text/javascript" src="/Blog/_site/js/html5.js"></script>
     <![endif]-->
-    <link href="/Blog/_site/css/footer.css" rel="stylesheet" type="text/css">
     <link href="/Blog/_site/favicon.ico" rel="shortcut icon">
     <link href="/Blog/_site/css/reset.css" rel="stylesheet" type="text/css">
     <link href="/Blog/_site/css/common.css" rel="stylesheet" type="text/css">
-    <link href="/Blog/_site/css/header.css" rel="stylesheet" type="text/css">
+    <link href="/Blog/_site/css/index.css" rel="stylesheet" type="text/css">
     <link href="/Blog/_site/css/category.css" rel="stylesheet" type="text/css">
     <script rel="script" type="text/javascript" src="/Blog/_site/js/zepto.js"></script>
 </head>
 
 <body>
-<header class="page-header">
-    <h1>Blog's Header Element.</h1>
-    <figure>
-        <img src="/Blog/_site/icon.png">
-        <figcaption>logo</figcaption>
-    </figure>
-    <nav>
-        <h2>Blog's Nav.</h2>
-        <ul>
-            <li><a href="/Blog/_site/index.html">首页</a></li>
-            <li><a href="/Blog/_site/category.html">分类</a></li>
-            <li><a href="/Blog/_site/about.html">关于</a></li>
-            <li><a href="/Blog/_site/concat.html">Concat</a></li>
-        </ul>
-    </nav>
-</header>
-
-<div class="content">
-    <h1 style="display: none;">Blog's content.</h1>
+<div class="main">
+    <h1 class="hidden">Tao-Quixote's Blog</h1>
+    <div class="main-inner">
+        <!-- include content wrap -->
+        <div class="content">
+    <h2 class="hidden">Content wrap</h2>
     <div class="category-content">
     <ul>
         
         <li>
-            <h2 class="category" href="javascript: void(0);">gh-pages</h2>
+            <h2 class="category">gh-pages</h2>
             <ul>
                 
                 <li>
@@ -58,7 +44,7 @@
         </li>
         
         <li>
-            <h2 class="category" href="javascript: void(0);">test</h2>
+            <h2 class="category">test</h2>
             <ul>
                 
                 <li>
@@ -82,33 +68,76 @@
 </script>
 
 </div>
+
+        <!-- include aside wrap -->
+        <aside>
+    <h2 class="hidden">Blog's aside</h2>
+    <div class="desc">
+        <h3>陶吉诃德</h3>
+        <p>
+            这是最好的时代，这是最坏的时代；这是智慧的年代，这是愚蠢的年代；这是信仰的时期，这是怀疑的时期；这是光明的季节，这是黑暗的季节；这是希望之春，这是绝望之冬；</p>
+    </div>
+    <nav>
+        <h3 class="hidden">Blog's navigation bar</h3>
+        <ul>
+            <li><a class="l-home" href="/Blog/_site/index.html">首页</a></li>
+            <li><a class="l-category" href="/Blog/_site/category.html">分类</a></li>
+            <li><a class="l-about" href="/Blog/_site/about.html">关于</a></li>
+            <li><a class="l-concat" href="/Blog/_site/concat.html">Concat</a></li>
+        </ul>
+    </nav>
+    <div class="something">
+        <figure>
+            <img src="/Blog/_site/icon.png" alt="Blog's icon desc." title="Blog's icon desc.">
+            <figcaption class="hidden">Blog's icon desc.</figcaption>
+        </figure>
+        <div class="stuff">
+
+        </div>
+        <div class="rss">
+            <p><a href="aside.html">RSS</a></p>
+        </div>
+        <div class="concat">
+            <address>
+                <a href="https://www.facebook.com/xin.taojihede" target="_blank">
+                    <span class="facebook"></span>
+                </a>
+                <a href="https://twitter.com/TaoJiHeDe" target="_blank">
+                    <span class="twitter"></span>
+                </a>
+                <a href="https://github.com/Tao-Quixote" target="_blank">
+                    <span class="github"></span>
+                </a>
+                <a href="https://plus.google.com/u/0/109069375032084811531/posts/p/pub" target="_blank">
+                    <span class="google"></span>
+                </a>
+                <a href="http://ws.nullisall.com" target="_blank">
+                    <span class="ws"></span>
+                </a>
+            </address>
+        </div>
+    </div>
+</aside>
+
+    </div>
+</div>
 <footer class="page-footer">
-    <h1>Blog's Footer Element.</h1>
+    <h1 class="hidden">Blog's Footer Element.</h1>
     <address>
-        <h2 style="display: none;">Concat Author.</h2>
-        <a href="https://www.facebook.com/xin.taojihede" target="_blank">
-            <span class="facebook"></span>
-        </a>
-        <a href="https://twitter.com/TaoJiHeDe" target="_blank">
-            <span class="twitter"></span>
-        </a>
-        <a href="https://github.com/Tao-Quixote" target="_blank">
-            <span class="github"></span>
-        </a>
-        <a href="https://plus.google.com/u/0/109069375032084811531/posts/p/pub" target="_blank">
-            <span class="google"></span>
-        </a>
-        <a href="http://ws.nullisall.com" target="_blank">
-            <span class="ws"></span>
-        </a>
-        <p class="mail">
-            Concat me by
-            <a href="mailto:web.taox@gmail.com?subject=Concat-me-from-blog">email</a>
-        </p>
+        <p>Concat me by <a href="mailto:web.taox@gmail.com?subject=Concat-me-from-blog">E-mail</a></p>
     </address>
-    <p class="copy-right">&copy; 2016 -- Now</p>
+    <p class="copy-right">&copy;2016 -- NOW</p>
 </footer>
 
+<script>
+    $(function () {
+        var content      = $('.content'),
+            windowHeight = window.screen.availHeight;
+        if (content.height() < windowHeight) {
+            content.css('height', windowHeight + 'px');
+        }
+    });
+</script>
 </body>
 　　
 </html>

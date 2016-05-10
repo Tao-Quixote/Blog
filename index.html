@@ -2,15 +2,23 @@
 layout: default
 title: Tao-Quixote's Blog's Homepage.
 ---
-<div class='category'>
+<div class='posts'>
     <ul>
         {% for post in site.posts %}
         <li>
-            <h2><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h2>
-            <p>{{post.excerpt}}</p>
+            <div>
+                <h3 class="title"><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
+                <p class="p-info">
+                    <span class="publish">发表时间: <time>{{ post.date | date_to_string }}</time></span> |
+                    <span>分类: <a>{{ post.category }}</a></span>
+                </p>
+                <p class="excerpt">
+                    {{post.excerpt | strip_html}}
+                </p>
+            </div>
+            <a class="read-all">阅读全部</a>
+            <hr/>
         </li>
         {% endfor %}
     </ul>
-
-    <p>post time: {{ site.time | date_to_long_string }}</p>
 </div>

@@ -2,12 +2,25 @@
 <html>
 {% include head.html %}
 <body>
-{% include header.html %}
-<div class="content">
-    <h1 style="display: none;">Blog's content.</h1>
-    {{ content }}
+<div class="main">
+    <h1 class="hidden">Tao-Quixote's Blog</h1>
+    <div class="main-inner">
+        <!-- include content wrap -->
+        {% include content.html %}
+        <!-- include aside wrap -->
+        {% include aside.html %}
+    </div>
 </div>
 {% include footer.html %}
+<script>
+    $(function () {
+        var content      = $('.content'),
+            windowHeight = window.screen.availHeight;
+        if (content.height() < windowHeight) {
+            content.css('height', windowHeight + 'px');
+        }
+    });
+</script>
 </body>
 　　
 </html>
