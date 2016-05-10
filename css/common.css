@@ -186,6 +186,10 @@ footer address {
 
 /* 适配屏幕宽度 */
 @media screen and (min-width: 921px) {
+    .main .main-inner {
+        width: 960px;
+    }
+
     .main .content {
         width: 700px;
     }
