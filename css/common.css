@@ -170,6 +170,7 @@ footer {
     text-align: center;
     margin: 40px 220px 20px 0;
     color: #666;
+    font-size: 1.4rem;
 }
 
 footer a {
@@ -180,6 +181,6 @@ footer a:hover {
     color: #333;
 }
 
-.copy-right {
-    margin-top: 20px;
+footer address {
+    margin-top: 10px;
 }
