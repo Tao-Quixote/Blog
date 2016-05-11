@@ -246,6 +246,6 @@ footer address {
 
 @media screen and (max-width: 500px) {
     .main .content {
-        padding: 0;
+        padding: 0 10px;
     }
 }
