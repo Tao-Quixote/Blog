@@ -2,6 +2,7 @@
 <html>
 {% include head.html %}
 <body>
+{% include header.html %}
 <div class="main">
     <h1 class="hidden">Tao-Quixote's Blog</h1>
     <div class="main-inner">
@@ -14,11 +15,35 @@
 {% include footer.html %}
 <script>
     $(function () {
+        /* cal the height of the content. */
         var content      = $('.content'),
             windowHeight = window.screen.availHeight;
         if (content.height() < windowHeight) {
             content.css('height', windowHeight + 'px');
         }
+        /* if show header */
+        var headerNav = $('#header-nav'),
+            navFolder = $('#nav-folder');
+        navFolder.on('click', function () {
+            if (headerNav.hasClass('hide-nav')) {
+                headerNav.removeClass('hide-nav');
+                navFolder.removeClass('folder-closed').addClass('folder-open');
+            } else {
+                headerNav.addClass('hide-nav');
+                navFolder.removeClass('folder-open').addClass('folder-closed');
+            }
+        });
+        /* control music */
+        $('#music').on('click', function () {
+            var audio = $(this).children('audio')[0];
+            if (audio.paused) {
+                audio.play();
+                $(this).css('animation', 'music 3s linear infinite');
+            } else {
+                audio.pause();
+                $(this).css('animation', 'none');
+            }
+        });
     });
 </script>
 </body>

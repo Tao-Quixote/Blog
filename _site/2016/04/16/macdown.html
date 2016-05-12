@@ -21,6 +21,22 @@
 </head>
 
 <body>
+<header>
+    <div id="header-desc">
+        <p>陶吉诃德<i id="nav-folder" class="folder-closed"></i></p>
+        <p>这是最好的时代，这是最坏的时代；这是智慧的年代，这是愚蠢的年代；这是信仰的时期，这是怀疑的时期；这是光明的季节，这是黑暗的季节；这是希望之春，这是绝望之冬；</p>
+    </div>
+    <nav id="header-nav" class="hide-nav">
+        <h1 class="hidden">Hidden Nav For the Blog.</h1>
+        <ul>
+            <li><a href="/Blog/_site/index.html">首页</a></li>
+            <li><a href="/Blog/_site/category.html">分类</a></li>
+            <li><a href="/Blog/_site/about.html">关于</a></li>
+            <li><a href="/Blog/_site/concat.html">Concat</a></li>
+        </ul>
+    </nav>
+</header>
+
 <div class="main">
     <h1 class="hidden">Tao-Quixote's Blog</h1>
     <div class="main-inner">
@@ -97,11 +113,35 @@
 
 <script>
     $(function () {
+        /* cal the height of the content. */
         var content      = $('.content'),
             windowHeight = window.screen.availHeight;
         if (content.height() < windowHeight) {
             content.css('height', windowHeight + 'px');
         }
+        /* if show header */
+        var headerNav = $('#header-nav'),
+            navFolder = $('#nav-folder');
+        navFolder.on('click', function () {
+            if (headerNav.hasClass('hide-nav')) {
+                headerNav.removeClass('hide-nav');
+                navFolder.removeClass('folder-closed').addClass('folder-open');
+            } else {
+                headerNav.addClass('hide-nav');
+                navFolder.removeClass('folder-open').addClass('folder-closed');
+            }
+        });
+        /* control music */
+        $('#music').on('click', function () {
+            var audio = $(this).children('audio')[0];
+            if (audio.paused) {
+                audio.play();
+                $(this).css('animation', 'music 3s linear infinite');
+            } else {
+                audio.pause();
+                $(this).css('animation', 'none');
+            }
+        });
     });
 </script>
 </body>
