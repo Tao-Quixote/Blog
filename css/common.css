@@ -35,9 +35,11 @@ div#header-desc {
     font-size: 2rem;
     cursor: pointer;
 }
+
 #header-desc .folder-closed::after {
     content: '\e931';
 }
+
 #header-desc .folder-open::after {
     content: '\e932';
 }
@@ -49,14 +51,15 @@ div#header-desc {
 }
 
 header nav {
-    padding: 5px 0;
+    max-height: 200px;
     background-color: #f5f7f9;
     color: #666;
-    transition: all 0.5s linear;
+    transition: max-height 0.4s ease-in;
 }
 
 header .hide-nav {
-    height: 0;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
 }
 
 header li {
