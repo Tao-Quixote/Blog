@@ -179,6 +179,8 @@ aside > nav {
 }
 
 aside > nav a {
+    display: inline-block;
+    width: 100%;
     color: inherit;
 }
 
