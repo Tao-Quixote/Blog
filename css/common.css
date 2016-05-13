@@ -62,6 +62,11 @@ header .hide-nav {
     transition: max-height 0.3s ease-out;
 }
 
+#header-nav ul {
+    padding: 0;
+    margin: 0;
+}
+
 header li {
     line-height: 2.5;
     cursor: pointer;
@@ -140,6 +145,11 @@ header li > a {
     content: '\e911';
 }
 
+.main .content li {
+    margin-top: 10px;
+    list-style-type: disc;
+}
+
 /* Aside Style Start */
 .main aside {
     width: 200px;
@@ -168,6 +178,10 @@ aside > nav {
     background-color: white;
 }
 
+aside > nav a {
+    color: inherit;
+}
+
 aside ul {
     padding: 20px 0;
     font-family: iconmoon;
@@ -177,6 +191,7 @@ aside ul > li {
     line-height: 2.2;
     cursor: pointer;
     padding: 0 20px;
+    margin-top: 0;
 }
 
 aside ul > li:hover {
@@ -224,10 +239,18 @@ aside .something {
     border-width: 1px 0;
 }
 
+.rss p {
+    margin: 0;
+}
+
 .rss p::before {
     font-family: iconmoon;
     content: '\ea9b';
     padding-right: 10px;
+}
+
+.rss a {
+    color: inherit;
 }
 
 .concat address {
@@ -237,6 +260,7 @@ aside .something {
 
 .concat address > a {
     font-family: iconmoon;
+    color: inherit;
 }
 
 .concat address > a:hover {

@@ -1,9 +1,13 @@
 .posts {
     text-align: center;
 }
+.posts a {
+    color: inherit;
+}
 
 .posts ul > li {
     margin-top: 40px;
+    list-style-type: none !important;
 }
 
 .posts .title {
