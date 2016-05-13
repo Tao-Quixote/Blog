@@ -3,32 +3,14 @@ encoding: utf-8
 baseurl:
 categories: javascript,css,html,mac,linux
 
-# 转换
-markdown:    kramdown
-highlighter: rouge
-lsi:         false
-excerpt_separator: "\n\n"
-incremental: false
-
-# config for markdown
-rdiscount:
-  extensions: []
-
-redcarpet:
-  extensions: []
-
+markdown: kramdown
 kramdown:
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
+  input: GFM
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+  enable_coderay: true
+  syntax_highlighter: rouge
   coderay:
-    coderay_wrap:              div
-    coderay_line_numbers:      inline
-    coderay_line_number_start: 1
-    coderay_tab_width:         4
-    coderay_bold_every:        10
-    coderay_css:               style
+    coderay_line_numbers:  nil
