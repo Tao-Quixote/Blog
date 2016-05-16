@@ -9,7 +9,7 @@ title: Tao-Quixote's Blog's Homepage.
             <div>
                 <h3 class="title"><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
                 <p class="p-info">
-                    <span class="publish">发表时间: <time>{{ post.date | date_to_string }}</time></span> |
+                    <span class="publish">发表时间: <time datetime="{{ post.date }} pubdate">{{ post.date | date_to_string }}</time></span> |
                     <span>分类: <a>{{ post.category }}</a></span>
                 </p>
                 <p class="excerpt">
