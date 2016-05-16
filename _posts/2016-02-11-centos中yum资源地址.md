@@ -1,7 +1,7 @@
 ---
 layout: default
 title: centos中yum资源地址
-category: linux
+category: Linux
 excerpt: 本文主要介绍centos系统中使用yum安装常用软件时用得到的资源地址
 ---
 <h2>centos yum资源地址</h2>

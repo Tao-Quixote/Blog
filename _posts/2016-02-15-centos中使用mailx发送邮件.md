@@ -1,7 +1,7 @@
 ---
 layout: default
 title: centos中使用mailx发送邮件
-category: linux
+category: Linux
 excerpt: 本文将介绍一下如何在centos中借助mailx在命令行发送邮件
 ---
 <h2>centos中使用mailx发送邮件</h2>
