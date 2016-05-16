@@ -13,7 +13,7 @@ title: Tao-Quixote's Blog's Homepage.
                     <span>分类: <a>{{ post.category }}</a></span>
                 </p>
                 <p class="excerpt">
-                    {{post.excerpt | strip_html}}
+                    简介: {{ post.excerpt }}
                 </p>
             </div>
             <a class="read-all" href="{{site.baseurl}}{{post.url}}">阅读全部</a>

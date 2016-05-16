@@ -5,11 +5,11 @@ title: category
 <div class="category-content">
     <ul>
         {% for cat in site.categories %}
-        <li>
+        <li class="kill-list-type">
             <h2 class="category">{{cat[0]}}</h2>
             <ul>
                 {% for page in cat[1] %}
-                <li>
+                <li class="post-title">
                     <h3>
                         <a href="{{ site.baseurl }}{{page.url}}">{{ page.title }}</a>
                     </h3>
