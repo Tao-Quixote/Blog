@@ -30,11 +30,3 @@ excerpt: 本文主要介绍Host 'xx.xx.xx.xx' is not allowed to connect to this 
 如果是远程执行的上述操作，执行下面的语句，mysql远程帐号可以立即生效。
 
 	>flush privileges;
-	
-	
-	---
-layout: default
-title:Host 'xx.xx.xx.xx' is not allowed to connect to this Mysql server解决办法
-category: mysql
-excerpt: 本文主要介绍Host 'xx.xx.xx.xx' is not allowed to connect to this Mysql server解决办法。
---- 
