@@ -1,6 +1,6 @@
 encoding: utf-8
 # baseurl可以不用设置,可通过{{site.baseurl}}获取,github-pages默认的根路径是Blog/_site/目录,所以这里可以不用设置
-baseurl: Blog/_site
+baseurl:
 categories: javascript,css,html,mac,linux
 
 markdown: kramdown
